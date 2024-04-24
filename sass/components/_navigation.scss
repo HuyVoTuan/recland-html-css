@@ -1,0 +1,48 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 8rem;
+  width: inherit;
+  padding: 0 14rem;
+
+  &__logo-box {
+    height: 4rem;
+    width: 19.43rem;
+  }
+
+  &__logo {
+    display: block;
+    width: inherit;
+
+    img {
+      display: block;
+      width: inherit;
+      object-fit: cover;
+    }
+  }
+
+  &__links-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 4.4rem;
+    width: 50.3rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &__link {
+    margin-right: 1rem;
+  }
+
+  &__link:first-child {
+    @include button-size(4.4rem, 16.3rem);
+  }
+
+  &__link:last-child {
+    margin-right: 0;
+  }
+}
